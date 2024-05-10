@@ -1,8 +1,10 @@
 
 import Link from "next/link";
 import Container from "./Container";
+import { Redressed } from "next/font/google";
 
- const NavBar = () => {
+const redressed = Redressed ({ subsets: ["latin"],weight: ["400"]});
+const NavBar = () => {
     return ( <div  className="
     sticky
     top-0
@@ -22,8 +24,11 @@ import Container from "./Container";
          gap-3
          md:gap-0
          ">
-            <Link href="/">E-shop</Link>
-            <div>Search</div>
+            <Link href="/" 
+            className={`${redressed.className} font-blod text-2x1`}
+            >
+               E-shop</Link>
+            <div className="hidden md:block">Search</div>
             <div className="flex items-center gap-8 md:gap-12">
                <div>CartCount</div>
                <div>UserMenu</div>
