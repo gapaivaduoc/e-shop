@@ -2,7 +2,7 @@ import Link from "next/link";
 import Container from "../nav/Container";
 import FooterList from "./FooterList";
 import {MdFacebook} from 'react-icons/md';
-import {AiFillTwitterCircle, AiFillInstagram, AiFillAmazonCircle} from "react-icons/ai"; 
+import {AiFillTwitterCircle, AiFillInstagram, AiFillAmazonCircle} from "react-icon/ai"; 
 
 const Footer = () => {
     return ( <footer className="bg-slate-700 text-slate-200 text-sm mt-16">
